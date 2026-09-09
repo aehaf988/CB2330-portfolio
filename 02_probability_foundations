@@ -697,7 +697,7 @@
         "        total = total + weights[i]\n",
         "        # 1 line. Add this outcome's weight to `in_event`. The `if` is given.\n",
         "        if outcomes[i] in event:\n",
-        "            in_event = in_event + weights[i] #⭐⭐⭐ Your code here ⭐⭐⭐\n",
+        "            in_event = in_event + weights[i]\n",
         "    return in_event / total"
       ]
     },
@@ -830,7 +830,7 @@
         "            n_given = n_given + 1\n",
         "            # 1 line. Count this position into `n_both` as well. The `if` is given.\n",
         "            if seq[i + 1] == nxt:\n",
-        "                n_both = n_both +1 #⭐⭐⭐ Your code here ⭐⭐⭐\n",
+        "                n_both = n_both +1\n",
         "    return n_both / n_given"
       ]
     },
@@ -1068,13 +1068,13 @@
         "joint_healthy = p_pos_given_healthy * p_healthy\n",
         "\n",
         "# 1 line. The same multiplication for the infected hypothesis.\n",
-        "joint_infected = p_pos_given_infected * p_infected #⭐⭐⭐ Your code here ⭐⭐⭐\n",
+        "joint_infected = p_pos_given_infected * p_infected\n",
         "\n",
         "# 1 line. Stage 2, the denominator. P{E} is the two joints added up.\n",
-        "p_positive = joint_healthy + joint_infected #⭐⭐⭐ Your code here ⭐⭐⭐\n",
+        "p_positive = joint_healthy + joint_infected\n",
         "\n",
         "# 1 line. Stage 3. P{H|E} is the infected joint over P{E}.\n",
-        "p_infected_given_pos = joint_infected / p_positive #⭐⭐⭐ Your code here ⭐⭐⭐"
+        "p_infected_given_pos = joint_infected / p_positive"
       ]
     },
     {
